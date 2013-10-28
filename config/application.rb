@@ -2,6 +2,11 @@ require 'pathname'
 require 'sqlite3'
 require 'active_record'
 require 'logger'
+require_relative '../app/models/list.rb'
+require_relative '../app/models/task.rb'
+require_relative '../app/controller/controller.rb'
+require_relative '../app/view/view.rb'
+
 
 APP_ROOT = Pathname.new(File.expand_path(File.join(File.dirname(__FILE__), '..')))
 
